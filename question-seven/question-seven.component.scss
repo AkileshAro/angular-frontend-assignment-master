@@ -1,0 +1,66 @@
+#colorchilderen {
+    // overider this for second problem 
+    div{
+        &:nth-child(1){
+            div{
+                color:red;
+            }
+        }
+        &:nth-child(2){
+            div{
+                color: yellow;
+            }
+        }
+    }
+    color:green;
+}
+
+#bluecolor {
+    // for second problem
+    ul{
+        li{
+            &:nth-child(2){
+                color:blue;
+            }
+        }
+    }
+}
+
+#evenodd {
+    // for third problem 
+    li{
+        &:nth-child(even){
+            color:red;
+        }
+        &:nth-child(odd){
+            color : green;
+        }
+    }
+}
+
+#lastselector {
+    // for fourth problem 
+    ul{
+        li{
+            &:nth-last-child(1){
+                color:red;
+            }
+        }
+    }
+}
+
+a[href]{
+    color : red;    
+}
+
+a{
+    &:nth-last-child(1){
+        &:hover{
+            color:red;
+            cursor: pointer;
+        }
+        &:active{
+            color:blue;
+        }
+    }
+}

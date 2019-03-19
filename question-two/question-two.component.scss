@@ -1,0 +1,92 @@
+.part1 {
+  p {
+    color: red;
+
+    &:nth-last-child(1) {
+      color: yellow;
+    }
+  }
+
+  span {
+    color: blue;
+  }
+
+  div {
+    p {
+      color: green;
+    }
+  }
+}
+
+.part2 {
+  ol {
+    li {
+      color: red;
+
+      &:nth-child(3n) {
+        color: green;
+      }
+    }
+  }
+}
+
+.part3 {
+  div {
+    color: blue;
+
+    &:nth-child(7n) {
+      color: red;
+    }
+  }
+
+  .iAffectMyNextdiv {
+    color: red;
+  }
+
+}
+
+
+.part4 {
+    
+  div {
+    a {
+      color: red;
+
+      &[target=_blank] {
+        color: yellow;
+      }
+    }
+  }
+
+  ul {
+    li {
+      color: green;
+
+      a {
+        &[target=_blank] {
+          color: yellow;
+        }
+      }
+
+      &:nth-child(3) {
+        color: red;
+
+        a {
+          color: red;
+        }
+      }
+    }
+  }
+
+  p {
+    a {
+
+      &[target=_blank] {
+        color: yellow;
+      }
+    }
+  }
+  a:nth-child(5){
+      color:red;
+  }
+}
